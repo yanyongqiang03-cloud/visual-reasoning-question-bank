@@ -1,0 +1,19 @@
+id,image,task,model_context,question,reference_answer,reference_mean,author_review
+C00,data/previews/AS_09125_050118150001_A03f00d0.png,counting,Hoechst 33342 核染色单通道显微图,请估计视野中的细胞核数量并说明困难。,以核作为细胞代理；重叠及边缘目标造成误差；参考值为原数据两人计数均值。,356,pending
+C01,data/previews/AS_09125_050118150001_A03f01d0.png,counting,Hoechst 33342 核染色单通道显微图,请估计视野中的细胞核数量并说明困难。,以核作为细胞代理；重叠及边缘目标造成误差；参考值为原数据两人计数均值。,339,pending
+C02,data/previews/AS_09125_050118150001_A03f02d0.png,counting,Hoechst 33342 核染色单通道显微图,请估计视野中的细胞核数量并说明困难。,以核作为细胞代理；重叠及边缘目标造成误差；参考值为原数据两人计数均值。,421.5,pending
+C03,data/previews/AS_09125_050118150001_A03f03d0.png,counting,Hoechst 33342 核染色单通道显微图,请估计视野中的细胞核数量并说明困难。,以核作为细胞代理；重叠及边缘目标造成误差；参考值为原数据两人计数均值。,330.5,pending
+C04,data/previews/AS_09125_050118150001_A03f04d0.png,counting,Hoechst 33342 核染色单通道显微图,请估计视野中的细胞核数量并说明困难。,以核作为细胞代理；重叠及边缘目标造成误差；参考值为原数据两人计数均值。,465.5,pending
+C05,data/previews/AS_09125_050118150001_A03f05d0.png,counting,Hoechst 33342 核染色单通道显微图,请估计视野中的细胞核数量并说明困难。,以核作为细胞代理；重叠及边缘目标造成误差；参考值为原数据两人计数均值。,249,pending
+O00,data/previews/AS_09125_050118150001_A03f00d0.png,observation,Hoechst 33342 核染色单通道显微图,亮区主要对应什么结构？能直接当作脂滴吗？,结合核染料元数据主要对应细胞核；不能直接作为脂滴；结构身份不是仅凭亮点确定。,,pending
+O01,data/previews/AS_09125_050118150001_A03f01d0.png,observation,Hoechst 33342 核染色单通道显微图,自动计数时应如何处理靠近或重叠的亮区？,结合核形状及强度分布判断相邻核；可采用分水岭并人工复核；不能把每个连通亮区自动等同一个细胞。,,pending
+O02,data/previews/AS_09125_050118150001_A03f02d0.png,observation,Hoechst 33342 核染色单通道显微图,应如何处理图像边缘被截断的核？,制定一致纳入排除规则并对参考计数说明口径；边缘截断会影响数量；不能自行假设原标注者口径。,,pending
+O03,data/previews/AS_09125_050118150001_A03f03d0.png,observation,Hoechst 33342 核染色单通道显微图,计数前怎样判断背景或小亮点是否应算作核？,结合面积形态局部背景判断并保留疑难目标复核；可能有碎片或噪声；不能只凭全局亮度阈值确定生物身份。,,pending
+O04,data/previews/AS_09125_050118150001_A03f04d0.png,observation,Hoechst 33342 核染色单通道显微图,说明从这张图计数可能产生的误差以及复核方法。,核重叠与边缘截断及阈值选择可能造成误差；放大核对疑难区域并明确计数口径；不要声称图片已有像素级真值。,,pending
+O05,data/previews/AS_09125_050118150001_A03f05d0.png,observation,Hoechst 33342 核染色单通道显微图,这张核染色图能直接测量完整细胞的面积吗？,可测核面积但不等于完整细胞面积；完整细胞轮廓通常需额外膜或细胞质通道；不可把核轮廓代替细胞轮廓。,,pending
+B00,data/previews/AS_09125_050118150001_A03f00d0.png,evidence_boundary,未提供处理组和表达检测信息,这张图能证明 RUNX2 过表达促进成脂吗？,不能；缺乏 RUNX2 干预验证和成脂证据及对照；核图像不能单独支持该因果结论。,,pending
+B01,data/previews/AS_09125_050118150001_A03f01d0.png,evidence_boundary,单张显微图未提供重复实验,能否仅凭这张图片宣称处理使细胞数量显著增加？,不能；需要对照及独立重复和预设统计方法；单个视野不能证明统计显著性。,,pending
+B02,data/previews/AS_09125_050118150001_A03f02d0.png,evidence_boundary,单通道图未提供细胞类型元数据,能否仅凭这张图确定细胞系是 HT29？,不能可靠确定；细胞系身份需来源元数据或身份验证；可描述核但不能把形态当作特定细胞系鉴定。,,pending
+B03,data/previews/AS_09125_050118150001_A03f03d0.png,evidence_boundary,未提供曝光增益或活死染色,更亮的核是否必然意味着细胞更健康？,不必然；亮度受染色曝光增益和 DNA 含量等影响；健康或存活状态需其他证据。,,pending
+B04,data/previews/AS_09125_050118150001_A03f04d0.png,evidence_boundary,仅有六个同处理视野和人工计数标签,能否报告本项目分割算法的 Dice 或 IoU？,不能仅用计数标签计算像素分割指标；需要核轮廓或掩膜真值；本项目也未训练分割算法。,,pending
+B05,data/previews/AS_09125_050118150001_A03f05d0.png,evidence_boundary,未提供比例尺或像素尺寸,能否直接给出核直径的微米值？,不能；只能给像素单位或相对大小；转为微米需像素标定或比例尺。,,pending
