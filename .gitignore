@@ -1,0 +1,7 @@
+data/images.zip
+__pycache__/
+.env
+.env.*
+!.env.example
+*.key
+*.token
