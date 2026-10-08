@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520" role="img" aria-label="带行列编号的符号网格">
+<rect width="800" height="520" fill="white"/><g font-family="sans-serif" font-size="24" fill="#222" text-anchor="middle"><text x="400" y="40">Symbol grid</text><text x="170" y="90">A</text><text x="320" y="90">B</text><text x="470" y="90">C</text><text x="620" y="90">D</text><text x="70" y="160">1</text><text x="70" y="280">2</text><text x="70" y="400">3</text></g>
+<g stroke="#aaa" fill="none"><path d="M100 110H700V470H100Z M250 110V470 M400 110V470 M550 110V470 M100 230H700 M100 350H700"/></g>
+<circle cx="170" cy="170" r="30" fill="#d43a32"/><rect x="290" y="140" width="60" height="60" fill="#2864b4"/><path d="M470 135L505 200H435Z" fill="#d43a32"/><circle cx="620" cy="170" r="30" fill="#2864b4"/>
+<path d="M170 255L205 320H135Z" fill="#2864b4"/><circle cx="320" cy="290" r="30" fill="#d43a32"/><rect x="440" y="260" width="60" height="60" fill="#d43a32"/><path d="M620 255L655 320H585Z" fill="#2864b4"/>
+<rect x="140" y="380" width="60" height="60" fill="#d43a32"/><path d="M320 375L355 440H285Z" fill="#d43a32"/><circle cx="470" cy="410" r="30" fill="#2864b4"/><rect x="590" y="380" width="60" height="60" fill="#2864b4"/>
+</svg>
